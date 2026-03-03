@@ -249,3 +249,94 @@ body {
 .btn--secondary:hover {
   color: var(--color-text);
 }
+
+/* ============================================================
+   Session History
+   ============================================================ */
+.session-history {
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  width: 100%;
+}
+
+.session-history__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.session-history__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.session-history__count {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.session-history__empty {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.session-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.session-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.session-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.session-list::-webkit-scrollbar-thumb {
+  background: var(--color-track);
+  border-radius: 2px;
+}
+
+.session-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-2);
+  font-size: 0.85rem;
+}
+
+.session-item__icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.session-item__label {
+  flex: 1;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.session-item__duration {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.session-item__time {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 3.5rem;
+  text-align: right;
+}
