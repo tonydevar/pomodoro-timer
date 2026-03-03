@@ -1,0 +1,10 @@
+{
+  "name": "pomodoro-frontend",
+  "version": "0.1.0",
+  "description": "React + Vite frontend for Pomodoro Timer (scaffold — full implementation pending)",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js"
+  },
+  "dependencies": {}
+}
